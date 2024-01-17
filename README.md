@@ -11,6 +11,7 @@
 - any feedback related to improving these circuits security and/or usability is highly appreciated
 
 #### General Notes:
+- this notebook was created using python v3.11
 - These circuits are not particularly fast in runtime (due to the nature of computations being executed)
 - in order to help with the preformance drag and to allow execution on different device types, the JAX python library is used
 - at the moment these circuits do not work with complex number operations, they do work with double-precision float values
