@@ -6,7 +6,7 @@
   2. photonic
 - This notebook uses simulators to demonstrate hashing capabilities, however, these circuits can be ran on physical quantum hardware if adapted correctly
 
-#### *Security Note*: these circuits are not battle tested in any capacity and therefore unverified to be cryptographically secure, or programatically useful in any manner
+#### *Security Note*: these circuits are not battle tested in any capacity and therefore unverified to be cryptographically secure, or programmatically useful in any manner
 - If anyone wants to benchmark and/or pentest these circuits feel free to do so
 - any feedback related to improving these circuits security and/or usability is highly appreciated
 
