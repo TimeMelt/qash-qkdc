@@ -16,9 +16,13 @@
 - in order to help with the preformance drag and to allow execution on different device types, the JAX python library is used
 - at the moment these circuits do not work with complex number operations, they do work with double-precision float values
 
-#### Future Goals
+#### Future Goals:
 - Create circuits to target trapped-ion and neutral-atom QPUs
 - continue research/development of new and current circuits using physical quantum hardware (whether through the cloud or on-premise access)
+- develop web ui for demo usage
+
+#### Credit/Citation:
+- please cite this project/repo if using it in research and/or development (USE IN RESEARCH/DEVELOPMENT IS ENCOURAGED)
 
 #### Donations (optional):
 - Buy Me a Coffee Link (custom amount):
