@@ -21,7 +21,7 @@
 - continue research/development of new and current circuits using physical quantum hardware (whether through the cloud or on-premise access)
 - develop web ui for demo usage
 
-#### Credit/Citation:
+#### Citation (this project):
 - please cite this project/repo if using it in research and/or development (USE IN RESEARCH/DEVELOPMENT IS ENCOURAGED)
 
 #### Donations (optional):
