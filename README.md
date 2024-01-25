@@ -6,6 +6,9 @@
   2. photonic
 - This notebook uses simulators to demonstrate hashing capabilities, however, these circuits can be ran on physical quantum hardware if adapted correctly
 
+### Web Demo Now Available!!!
+[![qash-qkdc-ui](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://qkdc-ui.streamlit.app/)
+
 #### *Security Note*: these circuits are not battle tested in any capacity and therefore unverified to be cryptographically secure, or programmatically useful in any manner
 - If anyone wants to benchmark and/or pentest these circuits feel free to do so
 - any feedback related to improving these circuits security and/or usability is highly appreciated
@@ -19,7 +22,7 @@
 #### Future Goals:
 - Create circuits to target trapped-ion and neutral-atom QPUs
 - continue research/development of new and current circuits using physical quantum hardware (whether through the cloud or on-premise access)
-- develop web ui for demo usage
+- ~~develop web ui for demo usage!~~
 
 #### Citation (this project):
 - please cite this project/repo if using it in research and/or development (USE IN RESEARCH/DEVELOPMENT IS ENCOURAGED)
