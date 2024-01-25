@@ -30,9 +30,9 @@
 
 #### Credits:
 - quantum libraries provided by PennyLane
-  - PennyLane source code [here](https://github.com/PennyLaneAI/pennylane)
+  - PennyLane GitHub is [here](https://github.com/PennyLaneAI/pennylane)
 - accerlation through Jax library
-  - Jax source code [here](https://github.com/google/jax)
+  - Jax GitHub is [here](https://github.com/google/jax)
 
 #### Donations (optional):
 - Buy Me a Coffee Link (custom amount):
