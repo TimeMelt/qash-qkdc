@@ -7,7 +7,8 @@
 - This notebook uses simulators to demonstrate hashing capabilities, however, these circuits can be ran on physical quantum hardware if adapted correctly
 
 ### Web Demo Now Available!!!
-[![qash-qkdc-ui](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://qkdc-ui.streamlit.app/)
+- [![qash-qkdc-ui](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://qkdc-ui.streamlit.app/)
+- [web demo source code](https://github.com/TimeMelt/qash-qkdc-streamlit)
 
 #### *Security Note*: these circuits are not battle tested in any capacity and therefore unverified to be cryptographically secure, or programmatically useful in any manner
 - If anyone wants to benchmark and/or pentest these circuits feel free to do so
@@ -26,6 +27,12 @@
 
 #### Citation (this project):
 - please cite this project/repo if using it in research and/or development (USE IN RESEARCH/DEVELOPMENT IS ENCOURAGED)
+
+#### Credits:
+- quantum libraries provided by PennyLane
+  - PennyLane source code [here](https://github.com/PennyLaneAI/pennylane)
+- accerlation through Jax library
+  - Jax source code [here](https://github.com/google/jax)
 
 #### Donations (optional):
 - Buy Me a Coffee Link (custom amount):
