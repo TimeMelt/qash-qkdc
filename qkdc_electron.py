@@ -19,14 +19,6 @@ def rotLoop(inputs):
         qml.RY(phi, wires=w)
         qml.RZ(phi, wires=w)
 
-# qutrit rotations on x,y,z axis
-def qutritLoop(inputs):
-    for w,q in enumerate(inputs):
-        phi = jnp.tan(q) * jnp.sin(q)
-        qml.RX(phi, wires=w)
-        qml.RY(phi, wires=w)
-        qml.RZ(phi, wires=w)
-
 # single excitation across wires
 def singleX(inputs):
     qml.PauliX(wires=0)
