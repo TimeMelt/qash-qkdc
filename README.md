@@ -35,9 +35,4 @@
   - Jax GitHub is [here](https://github.com/google/jax)
 
 #### Donations (optional):
-- Buy Me a Coffee Link (custom amount):
-  - [BuyMeACoffee!](https://www.buymeacoffee.com/timemelt97l)
-- Stripe Payments (pre-set amount):
-  - [$1.00 - Pat on the Back](https://buy.stripe.com/8wM8yk21d16o57G3cc)
-  - [$5.00 - The Supporter](https://buy.stripe.com/5kA8ykdJVcP6as08wx)
-  - [$10.00 - The Investor](https://buy.stripe.com/cN2aGs9tFaGY6bKaEG)
+- [Pick Your Amount](https://buy.stripe.com/fZe4i46ht5mEfMkeUY)
