@@ -35,4 +35,5 @@
   - Jax GitHub is [here](https://github.com/google/jax)
 
 #### Donations (optional):
-- [Pick Your Amount](https://buy.stripe.com/fZe4i46ht5mEfMkeUY)
+- Any donation, no matter how small, is greatly appreciated!! 
+- [click here to donate](https://buy.stripe.com/fZe4i46ht5mEfMkeUY)
