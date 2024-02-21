@@ -1,4 +1,6 @@
-# qash-qkdc
+<p align='center'><img src="img/qash.png" width="250"></p>
+
+# Qash-QKDC
 ## Quantum Key Derivation Circuits (Superconductor and Photonic QPUs)
 - This jupyter notebook demonstrates a proof of concept for using quantum operations to hash data in a cryptographically secure manner
 - There are 2 different circuits demnstrated based on the type of quantum processor (QPU) being used):
