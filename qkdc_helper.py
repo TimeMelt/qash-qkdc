@@ -23,7 +23,7 @@ def processOutput(output, format):
         "pack_double": '<d',
     }
     output_alt = []
-    for value in output: # process complex into hex
+    for value in output: # process into hex
         val_alt = value*100
         if val_alt < 0:
             output_alt.append(hex(struct.unpack(hex_params['unpack_long_long'], struct.pack(hex_params['pack_double'], -val_alt))[0]))
