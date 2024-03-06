@@ -3,14 +3,21 @@
 # Qash-QKDC
 ## Quantum Key Derivation Circuits (Superconductor and Photonic QPUs)
 - This jupyter notebook demonstrates a proof of concept for using quantum operations to hash data in a cryptographically secure manner
-- There are 2 different circuits demnstrated based on the type of quantum processor (QPU) being used):
-  1. superconductor
-  2. photonic
+- There are 2 different circuits demnstrated based on the type of quantum processor (QPU) being used:
+  1. superconductor (also compatible with trapped-ion QPUs)
+  2. photonic (fock based)
 - This notebook uses simulators to demonstrate hashing capabilities, however, these circuits can be ran on physical quantum hardware if adapted correctly
 
 ### Web Demo Now Available!!!
 - [![qash-qkdc-ui](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://qkdc-ui.streamlit.app/)
 - [web demo source code](https://github.com/TimeMelt/qash-qkdc-streamlit)
+
+### Updates
+- new device compatibility:
+  - IonQ & AQT (trapped-ion): compatible with superconductor circuit
+  - QuTech/Quantum Inspire
+  - IBM/Qiskit
+  - Google/Cirq
 
 #### *Security Note*: these circuits are not battle tested in any capacity and therefore unverified to be cryptographically secure, or programmatically useful in any manner
 - If anyone wants to benchmark and/or pentest these circuits feel free to do so
@@ -20,10 +27,10 @@
 - this notebook was created using python v3.11
 - These circuits are not particularly fast in runtime (due to the nature of computations being executed)
 - in order to help with the preformance drag and to allow execution on different device types, the JAX python library is used
-- at the moment these circuits do not work with complex number operations, they do work with double-precision float values
+- at the moment these circuits do not work with complex number operations, they do work with single and double-precision float values
 
 #### Future Goals:
-- Create circuits to target trapped-ion and neutral-atom QPUs
+- create circuits compatible with neutral-atom QPUs
 - continue research/development of new and current circuits using physical quantum hardware (whether through the cloud or on-premise access)
 - ~~develop web ui for demo usage!~~
 

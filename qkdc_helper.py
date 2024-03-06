@@ -17,18 +17,26 @@ def getBackend():
     print(f"platform = {xla_bridge.get_backend().platform}")
 
 # process output of quantum circuits into proper hash
-def processOutput(output, format):
+def processOutput(output, format, float_mode):
     hex_params = {
-        "unpack_long_long": '<Q',
+        "unpack_long_long": '<q',
+        "unpack_long": '<l',
         "pack_double": '<d',
+        "pack_float": '<f',
     }
     output_alt = []
     for value in output: # process into hex
         val_alt = value*100
         if val_alt < 0:
-            output_alt.append(hex(struct.unpack(hex_params['unpack_long_long'], struct.pack(hex_params['pack_double'], -val_alt))[0]))
+            if float_mode == 'single':
+                output_alt.append(hex(struct.unpack(hex_params['unpack_long'], struct.pack(hex_params['pack_float'], -val_alt))[0]))
+            else: 
+                output_alt.append(hex(struct.unpack(hex_params['unpack_long_long'], struct.pack(hex_params['pack_double'], -val_alt))[0]))
         else:
-            output_alt.append(hex(struct.unpack(hex_params['unpack_long_long'], struct.pack(hex_params['pack_double'], val_alt))[0]))
+            if float_mode == 'single':
+                output_alt.append(hex(struct.unpack(hex_params['unpack_long'], struct.pack(hex_params['pack_float'], val_alt))[0]))
+            else: 
+                output_alt.append(hex(struct.unpack(hex_params['unpack_long_long'], struct.pack(hex_params['pack_double'], val_alt))[0]))
     output_string = ''.join(output_alt)
     output_string = output_string.replace('0x', "") # remove hex markers
     output_string = output_string.replace(output_string[:4], "", 1) # remove chars for increased hash security 
