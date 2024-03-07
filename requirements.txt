@@ -1,5 +1,11 @@
 pennylane
 pennylane-sf
 pennylane-cirq
+pennylane-qiskit
+pennylane-lightning[kokkos]
+pennylane-lightning[gpu]
+pennylane-ionq
+pennylane-quantuminspire
+qiskit-aqt-provider
 jax
 jaxlib

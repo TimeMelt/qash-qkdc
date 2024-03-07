@@ -4,11 +4,11 @@ from jax import numpy as jnp
 
 # embed pepper/state based on float array
 def angleEmbed(input, pepper):
-    qml.AngleEmbedding(pepper, range(input.size))
+    qml.AngleEmbedding(pepper, range(len(input)))
 
 # induce superposition on all wires if no pepper is specified
 def superPos(inputs):
-    for q in range(inputs.size): 
+    for q in range(len(inputs)): 
         qml.Hadamard(wires=q)
 
 # arbitrary rotations on x,y,z axis
@@ -27,10 +27,10 @@ def singleX(inputs):
         if w == 0:
             pass
         else:
-            qml.SingleExcitation(phi, wires=[0, inputs.size-w])
+            qml.SingleExcitation(phi, wires=[0, len(inputs)-w])
 
 # strong entanglement interaction across all wires
 def strongTangle(inputs, key):
-    shape = qml.StronglyEntanglingLayers.shape(n_layers=1, n_wires=inputs.size)
+    shape = qml.StronglyEntanglingLayers.shape(n_layers=1, n_wires=len(inputs))
     weights = random.uniform(key, shape)
-    qml.StronglyEntanglingLayers(weights=weights, wires=range(inputs.size), imprimitive=qml.ops.CZ)
+    qml.StronglyEntanglingLayers(weights=weights, wires=range(len(inputs)), imprimitive=qml.ops.CZ)

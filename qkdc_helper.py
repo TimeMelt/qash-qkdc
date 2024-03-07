@@ -40,12 +40,11 @@ def processOutput(output, format, float_mode):
     output_string = ''.join(output_alt)
     output_string = output_string.replace('0x', "") # remove hex markers
     output_string = output_string.replace(output_string[:4], "", 1) # remove chars for increased hash security 
-    if format == 'hex':
-        pass
-    elif format == 'base64':
+    if format == 'base64':
         output_string = b2a_base64(bytes(output_string, 'utf-8')).decode('utf-8')# convert to base64
-    else:
-        print("invalid format...")
+        output_string = output_string[::-1]
+        output_string = output_string.replace(output_string[:3], "", 1)
+        output_string = output_string[::-1]
     return output_string
 
 # convert chars to unicode
@@ -70,3 +69,10 @@ def createAndPad(text, pad_count):
     arr = createData(text)
     arr1 = padData(arr, pad_count)
     return arr1
+
+def chooseBackend(shots):
+    if shots is None:
+        backend = 'statevector_simulator'
+    else:
+        backend = "qasm_simulator"
+    return backend
