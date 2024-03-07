@@ -18,6 +18,8 @@
   - QuTech/Quantum Inspire
   - IBM/Qiskit
   - Google/Cirq
+  - Nvidia/CuQuantum
+  - Kokkos
 
 #### *Security Note*: these circuits are not battle tested in any capacity and therefore unverified to be cryptographically secure, or programmatically useful in any manner
 - If anyone wants to benchmark and/or pentest these circuits feel free to do so
