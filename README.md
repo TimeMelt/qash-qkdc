@@ -1,18 +1,22 @@
 <p align='center'><img src="img/qash.png" width="250"></p>
 
 # Qash-QKDC
-## Quantum Key Derivation Circuits (Superconductor and Photonic QPUs)
+## Quantum Key-Derivation/Hashing Circuits (Superconductor and Photonic QPUs)
 - This jupyter notebook demonstrates a proof of concept for using quantum operations to hash data in a cryptographically secure manner
 - There are 2 different circuits demnstrated based on the type of quantum processor (QPU) being used:
   1. superconductor (also compatible with trapped-ion QPUs)
   2. photonic (fock based)
 - This notebook uses simulators to demonstrate hashing capabilities, however, these circuits can be ran on physical quantum hardware if adapted correctly
+- For proper gaussian-photonic implementation, check out [GausQash](https://github.com/TimeMelt/GausQash)
 
 ### Web Demo Now Available!!!
 - [![qash-qkdc-ui](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://qkdc-ui.streamlit.app/)
 - [web demo source code](https://github.com/TimeMelt/qash-qkdc-streamlit)
 
 ### Updates
+- specialized gradient calculation
+  - less possibility for hash collisions
+  - better key-derivation (more possiblities for key/hash outputs)
 - new device compatibility:
   - IonQ & AQT (trapped-ion): compatible with superconductor circuit
   - QuTech/Quantum Inspire

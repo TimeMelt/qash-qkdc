@@ -76,3 +76,14 @@ def chooseBackend(shots):
     else:
         backend = "qasm_simulator"
     return backend
+
+def calcGradHash(input, mode, fl):
+    x = jnp.array(input)
+    dx_new = 0
+    for i in range(len(input)-1):
+        dx = x[i+1] * x[i]
+        dx_new = dx_new + dx
+    y = x**2 * len(input)
+    dydx = jnp.gradient(y, dx_new)
+    output = processOutput(dydx, mode, fl)
+    return output
